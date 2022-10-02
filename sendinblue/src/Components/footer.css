@@ -24,7 +24,7 @@
 width: 80%;
 margin: auto;
     margin-top: 50px;
-    height: 200px;
+    /* height: 200px; */
     display: flex;
     /* justify-content:space-between; */
     gap: 10px;
@@ -40,4 +40,11 @@ margin: auto;
 }
 p{
     font-size: 20px;
+}
+.last{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content:space-evenly;
+   
 }

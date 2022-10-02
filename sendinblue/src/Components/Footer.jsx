@@ -100,6 +100,21 @@ function Footer() {
           <p>Product Updates</p>
         </div>
       </div>
+
+
+      <div>
+      <hr></hr>
+      <div className="last">
+        <div>
+          <p>© 2022 Sendinblue. All rights reserved</p>
+        </div>
+        <div>
+          <p>Cookie Settings, Anti-Spam, Privacy, User agreement, Legal Notice and Responsible Disclosure</p>
+        </div>
+      </div>
+      </div>
+    
+    
     </div>
   );
 }

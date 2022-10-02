@@ -3,17 +3,20 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Button, Dropdown, Image } from "react-bootstrap";
-
+import {Link} from "react-router-dom"
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
+          <Link to="/">
           <Image
             width="200px"
             src="https://www.sendinblue.com/wp-content/themes/sendinblue2019/assets/images/common/logo-color.svg"
             alt="Logo"
           ></Image>
+          </Link>
+         
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -89,11 +92,12 @@ function NavBar() {
               <NavDropdown.Item href="#action/3.2">Português</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link href="" style={{color:"blacke", fontWeight:"bold" }}>login
-           
+            <Nav.Link href="" style={{color:"black", fontWeight:"bold" }}>
+           <Link to="/login"><h5 style={{color:"black"}}>Log in</h5></Link>
               </Nav.Link>
-            <Button size="sm" style={{ paddingLeft: "5px" }}>
-              SignUp free
+            <Button  size="sm" style={{  backgroundColor:"#0092FF",fontSize:"20px",borderRadius:"20px"}}>
+              <Link to="/signup"><h6 style={{color:"white",fontWeight:"bold" }}>Signup Free</h6></Link>
+            
             </Button>
           </Nav>
         </Navbar.Collapse>
